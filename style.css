@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #70c5ce;
+    /* Sky blue */
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#score {
+    font-size: 48px;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    margin: 20px 0 0 0;
+    position: absolute;
+    top: 10%;
+    z-index: 10;
+}
+
+#message {
+    font-size: 24px;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
